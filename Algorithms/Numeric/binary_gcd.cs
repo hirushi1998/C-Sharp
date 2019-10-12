@@ -2,7 +2,7 @@ using System;
 
 namespace Algorithms.Numeric
 {
-    public class Example
+    public class example
     {
         public static void Main()
         {
@@ -15,16 +15,16 @@ namespace Algorithms.Numeric
                 {
                     if (!int.TryParse(input[0], out var a))
                     {
-                        Console.WriteLine("\"{0}\" is not a number.", input[0]);
+                        Console.Write("\"{0}\" is not a number.", input[0]);
                     }
                     else if (!int.TryParse(input[1], out var b))
                     {
-                        Console.WriteLine("\"{0}\" is not a number.", input[1]);
+                        Console.Write("\"{0}\" is not a number.", input[1]);
                     }
                     else
                     {
                         var value = Binary_gcd(a, b);
-                        Console.WriteLine("Greates common divisor of values {0} and {1} is {2}.", a, b, value);
+                        Console.Write("Greates common divisor of values {0} and {1} is {2}.", a, b, value);
                     }
                 }
                 else if (input.Length == 0)
